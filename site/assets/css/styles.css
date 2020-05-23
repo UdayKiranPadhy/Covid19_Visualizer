@@ -1,0 +1,7 @@
+.border-left-info {
+    border-left: .25rem solid #f06c54!important;
+}
+html{
+    padding: 0;
+    margin: 0;
+}
