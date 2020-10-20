@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color:#000000; 
+		}
+		.d1{
+			width:60px;
+			height: 60px;
+			border-radius:5px;
+			background-color: pink; 
+			animation-name:move1;
+			animation-duration:10s; 
+			animation-iteration-count:infinite; 
+			
+		}
+
+		@keyframes move1{
+			25%{transform: translate(250px,0px) rotate(180deg); }
+			50%{transform: translate(250px,250px); }
+			75%{transform: translate(0px,250px) rotate(180deg);}
+			100%{transform: translate(0px,0px); }
+			
+		}
+		.d2{
+			width:60px;
+			height: 60px;
+			border-radius:5px;
+			background-color: lightblue; 
+			animation-name:move;
+			animation-duration:10s;
+			animation-delay:2s;
+			animation-iteration-count:infinite;  
+		
+
+		}
+
+		@keyframes move{
+			20%{transform: translate(0px,-80px) rotate(180deg); }
+			40%{transform: translate(250px,-80px); }
+			60%{transform: translate(250px,170px) rotate(180deg);}
+			80%{transform: translate(0px,170px); }
+			100%{transform: translate(0px,0px) rotate(180deg); }
+		}
+		.d3{
+			width:60px;
+			height: 60px;
+			border-radius:5px;
+			background-color: #ccff99; 
+			animation-name:move3;
+			animation-duration:10s;
+			animation-delay:3.6s; 
+			animation-iteration-count:infinite; 
+			 
+			
+		}
+
+		@keyframes move3{
+			20%{transform: translate(0px,-160px) rotate(180deg); }
+			40%{transform: translate(250px,-160px); }
+			60%{transform: translate(250px,90px) rotate(180deg);}
+			80%{transform: translate(0px,90px); }
+			100%{transform: translate(0px,0px) rotate(180deg); }
+		}
+		.d4{
+			width:60px;
+			height:60px;
+			border-radius:5px;
+			background-color:orange; 
+			animation-name:move4;
+			animation-duration:10s;  
+			animation-delay:5.6s; 
+			animation-iteration-count:infinite; 
+			
+			
+		}
+
+		@keyframes move4{
+			20%{transform: translate(0px,-240px) rotate(180deg); }
+			40%{transform: translate(250px,-240px); }
+			60%{transform: translate(250px,10px) rotate(180deg);}
+			80%{transform: translate(0px,10px); }
+			100%{transform: translate(0px,0px) rotate(180deg); }
+		}
+	</style>
+</head>
+<body>
+	<div class="d1"></div><br>
+	<div class="d2"></div><br>
+	<div class="d3"></div><br>
+	<div class="d4"></div><br>
+
+
+</body>
+</html>

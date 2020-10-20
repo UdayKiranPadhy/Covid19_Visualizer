@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+alert("Click any where on the camera to make it flash.");
+        $(document).ready(function(){
+            $(".camera").click(function(){
+                $(".flash1").css({"background-color":"rgba(255,255,255,0.9)","height":"100vh","width":"100vw"});
+                setTimeout(function(){
+                    $(".flash1").css({"background-color":"transparent","height":"1vh","width":"1vw"});
+                },350);
+            });
+
+        });
+</script>
+<style>
+    body{
+            background-color: #ffd83b;
+            margin: 0;
+            padding:0;
+        }
+        .camera{
+            background-color: #d1d3d5;
+            height:185px;
+            width:310px;
+            position:absolute;
+            margin:auto;
+            right:0;
+            left:0;
+            top:0;
+            bottom: 0;  
+        }
+        .upper{
+            height:40px;
+            width:110px;
+            position: relative;
+            bottom: 35px;
+            left:140px; 
+            background-color: #d1d3d5;
+        }
+        .flash{
+            height: 25px;
+            width:60px;
+            position: relative;
+            background-color:#4e7387;
+            border-radius: 3px;
+            top: 5px;
+            left:45px;  
+        }
+        .l1{
+            background-color: #1f3640;
+            width:30px;
+            height:15px;
+            position: relative;
+            border-radius: 5px;
+            left:5px;
+            bottom: 20px; 
+        }
+        .l2{
+            background-color:#c2233b;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            left:20px;
+            bottom:18px;
+            border-radius: 50%;
+        }
+        .middle{
+            background-color: #414143;
+            height:120px;
+            width: 310px;
+            position: relative;
+            
+        }
+        .shadl,.shadr{
+            height: 185px;
+            
+            background-color: rgba(0,0,0,0.3);
+            position: relative;
+
+        }
+        .shadl{
+            
+            bottom: 40px;
+            width: 15px;
+        }
+        .shadr{
+            bottom: 225px;
+            left:280px;
+            width: 30px;
+        }
+        .lens{
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            background-color: #1f373e;
+            border:10px solid #d1d3d5;
+            position: relative;
+            bottom: 385px;
+            left:120px;
+
+        }
+        .lens1{
+            height:90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color:#4e7387;
+            border: 5px solid #5d8ba4;
+            position: relative;
+            top:15px;
+            left:15px; 
+        }
+        .lens2{
+            background-color: #092830;
+            height:35px;
+            width: 35px;
+            border-radius: 50%;        
+            border:10px solid #1f4755; 
+            position: relative;
+            top:18px;
+            left:18px;
+        }
+        .glare1,.glare2{
+            background-color: rgba(255,255,255,0.5);
+            position: relative;
+            border-radius: 50%;
+        }
+        .glare1{
+            height: 30px;
+            width: 30px;
+            bottom:78px;
+            left:15px;
+
+        }
+        .glare2{
+            height: 10px;
+            width: 10px;
+            bottom:78px;
+            left:48px;
+        }
+        .button{
+            background-color: #949499;
+            height:20px;
+            width:60px;
+            position: relative;
+            bottom: 180px;
+            left:35px;  
+        }
+        .s1,.s2,.s3{
+            width:10px;
+            height: 20px;
+            background-color: rgba(0,0,0,0.4); 
+            position: relative;
+        }
+        .s1{
+            left:5px;
+        }
+        .s2{
+            left:25px;
+            bottom:20px; 
+        }
+        .s3{
+            left:45px;
+            bottom: 40px;
+        }
+        .flash1{
+            height:25px;
+            width: 25px;
+            background-color: transparent;
+            margin: auto;
+            left:0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            position: absolute;
+            transition:0.1s ease; 
+            
+        }
+        a{
+            position:absolute;
+            bottom:0;
+            font-size:25px;
+            color:#414143;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="camera">
+        <div class="upper">
+            <div class="flash">
+                
+            </div>
+            <div class="l1"></div>
+            <div class="l2"></div>
+        </div>
+        <div class="middle">
+            <div class="shadl"></div>
+            <div class="shadr"></div>
+            <div class="lens">
+                <div class="lens1">
+                    <div class="lens2"></div>
+                </div>
+                <div class="glare1"></div>
+                <div class="glare2"></div>
+            </div>
+            
+        </div>
+        <div class="button">
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+        </div>
+        
+    </div>
+    <div class="flash1"></div>
+</body>
+</html>

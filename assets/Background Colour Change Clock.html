@@ -1,0 +1,148 @@
+<!--this is my first js code.so if you have any problem in my code please comment here.-->
+<!DOCTYPE html>
+<html>
+<head><title>clock</title>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/>
+<style type="text/css">
+*{
+    box-sizing:border-box;
+}
+body{
+width:100%;
+height:100%;
+margin:40% 0%;
+padding:0%;
+color:#fff;
+font-size:310%;
+text-align:center;
+overflow:hidden;
+font-family:arial;
+}
+#clock{
+font-family:'Segment7Standard';
+}
+#color{
+font-size:45%;
+font-family:cursive;
+}
+.sq{
+top:-50%;
+position:absolute;
+transform:translateZ(0);
+z-index:0;
+}
+.sq li{
+width:15%;
+height:15%;
+display:block;
+position:absolute;
+list-style:none;
+transition-timing-function:linear;
+background-color:rgba(200,200,100,0.1);
+-moz-animation:square 8s linear infinite;
+-o-animation:square 8s linear infinite;
+-ms-animation:square 8s linear infinite;
+animation:square 8s linear infinite;
+}
+.sq li:nth-child(1) {
+width:30px;
+height:30px;
+left:5px;
+}
+.sq li:nth-child(2) {
+width:60px;
+height:60px;
+left:50px;
+animation-delay:2s;
+}
+.sq li:nth-child(3) {
+width:65px;
+height:65px;
+left:130px;
+}
+.sq li:nth-child(4) {
+width:40px;
+height:40px;
+left:210px;
+animation-duration:12s;
+}
+.sq li:nth-child(5) {
+width:50px;
+height:50px;
+left:260px;
+animation-duration:15s;
+}
+.sq li:nth-child(6) {
+width:25px;
+height:25px;
+animation-delay:5s;
+}
+@keyframes square {
+0%{transform:translateY(-100px) rotate(90deg);}
+100%{transform:translateY(1000px) rotate(180deg);}
+}
+</style>
+</head>
+<body>
+<ul class="sq">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<div id="clock"></div><span id="e"></span>
+<p id="color"></p>
+<script type="text/javascript">
+var ap=document.getElementById("e");
+var color=document.getElementById("color");
+function display() {
+var mdy=new Date();
+var date=mdy.getDate();
+var months=mdy.getMonth()+1;
+var year=mdy.getFullYear();
+var hrs=mdy.getHours();
+var min=mdy.getMinutes();
+var sec=mdy.getSeconds();
+var en='AM';
+if(min<10){
+min='0'+min;
+}
+if(sec<10){
+sec='0'+sec;
+}
+var colors="#"+hrs+sec+min+hrs;
+if(months<10){
+months='0'+months;
+}
+if(date<10){
+date='0'+date;
+}
+if(hrs>=10){
+var colors="#"+sec+min+hrs;
+}
+if(hrs>12){
+en='PM';
+hrs=hrs-12;
+}
+if(hrs==0){
+hrs=12;
+}
+if(hrs<10){
+hrs='0'+hrs;
+}
+
+document.getElementById("clock").innerHTML=date+"-"+months+"-"+year+"<br>"+hrs+"-"+min+"-"+sec;
+color.innerHTML=colors;
+ap.innerHTML=en;
+document.body.style.backgroundColor=colors;
+}
+setInterval(display,500);
+</script>
+</body>
+</html>
