@@ -1,0 +1,161 @@
+<!--All images used in this code are from google images-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5 Useful Tools & Websites</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans:400,500&display=swap" rel="stylesheet">
+<style>
+body{
+    padding: 0;
+    margin: 0;
+}
+.heading-primary{
+    background-color: #24345A;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.heading-primary>span{
+    color: #FFC64C;
+    font-size: 20px;
+    font-weight: 500;
+}
+.heading-secondary{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    color: #24345A;
+}
+.heading-secondary>a{
+    background-color: #FFC64C;
+    color: white;
+    display: inline-block;
+    padding: 8px 15px;
+    letter-spacing: 0.15px;
+}
+.page{
+    width: 94%;
+    margin: 0 3%;
+}
+ .page:not(.page-1){
+    display: none;
+}
+.page>p{
+    font-family:  "Work Sans",sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+.page>img{
+    width: 98%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+    margin: 0 1%;
+    -webkit-box-shadow: 0 10px 25px rgba(0,64,128,0.15);
+            box-shadow: 0 10px 25px rgba(0,64,128,0.15); 
+    border:5px solid white;
+    border-bottom-width: 18px;
+    border-top-width: 18px;
+    border-radius: 5px;
+}
+ .button-box{
+    width: 94%;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+.button-box>button{
+    background-color:#FFC64C;
+    font-size: 19px;
+    font-weight: 600;
+    position: absolute;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding:5px 10px;
+    font-family: 'Montserrat',sans-serif;
+    outline: none;
+}
+.button-prev{
+    left: 0;
+}
+.button-next{
+    right: 0;
+}
+
+</style>
+</head>
+<body>
+    <!--Heading-->
+    <h1 class="heading-primary">5 Tools & Websites<br>
+    <span>
+       Useful For Web Developers   
+    </span></h1>
+
+    <!--Pages-->
+
+    <!--Page 1-->
+    <div class="page page-1">
+         <h2 class="heading-secondary">
+             1. <a href="https://www.fontsquirrel.com/matcherator" target="_blank">Matcherator</a>
+         </h2>
+         <p>
+             Ever looked at some text in an image and wondered what font it was? Just upload the image and it will suggest you a list of matching/ similar fonts.
+         </p>
+         <img src="https://prabidhi.info/wp-content/uploads/2020/01/Font-Squirrel-Matcherator.jpg" alt="Matcherator Image">
+    </div>
+    <!--Page 2-->
+    <div class="page page-2">
+         <h2 class="heading-secondary">
+             2. <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer</a>
+         </h2>
+         <p>
+             You don't have to worry about adding vendor prefixes manually anymore. This tool adds, arranges, and deletes prefixes for you.
+         </p>
+         <img src="https://dpzbhybb2pdcj.cloudfront.net/mcfedries/Figures/12_12.png" alt="Autoprefixer">
+    </div>
+    <!--Page 3-->
+    <div class="page page-3">
+        <h2 class="heading-secondary">
+        3. <a href="https://coolors.co/image-picker" target="_blank">Coolors</a>
+        </h2>
+        <p>I recommend this website a lot for a lot of different purposes. It allows you to generate a beautiful palette from your photos.</p>
+        <img src="https://miro.medium.com/max/2860/1*4kELcwD5Q7iRJ4rBkEnsmQ.png" alt="Coolors">
+    </div>
+    <!--Page 4-->
+    <div class="page page-4">
+        <h2 class="heading-secondary">
+        4. <a href="https://www.remove.bg/" target="_blank">Remove.bg</a>
+         </h2>
+         <p>Wanted to remove background from an awesome picture but had no knowledge about the fancy tools do to so? This tool allows you to remove the background from a picture in just 1 click.</p>
+         <img src="https://www.remove.bg/images/remove_image_background.jpg" alt="Remove.bg">
+    </div>
+    <!--Page 5-->
+    <div class="page page-5">
+        <h2 class="heading-secondary"> 
+        5. <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a>
+        </h2>
+        <p>If you are looking for a tool for SVG optimization, then you should check this out. It has a pretty good number of options for configuration. </p>
+        <img src="https://i.pinimg.com/originals/59/e3/d1/59e3d15b34300249aa37b5d6694443b6.jpg" alt="SVGOMG">
+    </div>
+    <!--Navigate Back N Forth-->
+     <div class="button-box">
+        <button class="button-prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> PREV
+        </button>
+        <button class="button-next">
+            NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Colour Guide</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500|Work+Sans:400,500" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    body{
+            background-color: #2C3E50;
+            height: 100vh;
+            width: 100vw;
+            padding:0;
+            margin:0;
+            display: flex;
+            align-items: center;
+            justify-content:center; 
+        }
+        .container{
+            height: 450px;
+            width: 350px;
+            position: absolute;
+        }
+        .swatches{
+            position: absolute;
+            top:310px;
+            right:5px;
+            width: 280px;
+            height: 60px;
+        }
+        .swatch{
+            background-color: #f7f9f9;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transform-origin:left bottom;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            -webkit-transform-origin:left bottom;
+            -webkit-transition: 0.5s;
+        }
+        .cover{
+            background-color: #95a5a6;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 6px;
+            transform-origin:left bottom;
+            transition: 0.5s;
+            -webkit-transform-origin:left bottom;
+            -webkit-transition: 0.5s;
+        }
+        .details{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            font-size: 20px;
+            font-family: 'Rubik',sans-serif;
+            color:#2C3E50 ;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        .ins{
+            font-size: 14px;
+            font-family: 'Work Sans',sans-serif;
+            color:#e1e9eb;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .cover>span{
+            display: block;
+        }
+        .swatches:hover .cover{
+            transform: rotate(-90deg);
+            transition: 2s;
+            -webkit-transform: rotate(-90deg);
+            -webkit-transition: 2s;
+        }
+        .swatches:hover .s1{
+            transform: rotate(0deg);
+            transition: 2s;
+            -webkit-transform: rotate(0deg);
+            -webkit-transition: 2s;
+        }
+        .swatches:hover .s2{
+            transform: rotate(-22.5deg);
+            transition: 2s;
+            -webkit-transform: rotate(-22.5deg);
+            -webkit-transition: 2s;
+        }
+        .swatches:hover .s3{
+            transform: rotate(-45deg);
+            transition: 2s;
+            -webkit-transform: rotate(-45deg);
+            -webkit-transition: 2s;
+        }
+        .swatches:hover .s4{
+            transform: rotate(-67.5deg);
+            transition: 2s;
+            -webkit-transform: rotate(-67.5deg);
+            -webkit-transition: 2s;
+        }
+        .swatch>span{
+            display: block;
+            height: 80%;
+            width: 50px;
+            border-radius: 5px;
+            position: absolute;
+        }
+        .swatch>span:nth-child(1){
+            left:55px;
+        }
+        .swatch>span:nth-child(2){
+            left:110px;
+        }
+        .swatch>span:nth-child(3){
+            right: 65px;
+        }
+        .swatch>span:nth-child(4){
+            right: 10px;
+        }
+        .pin{
+            height: 15px;
+            width: 15px;
+            background-color:#2C3E50;
+            border-radius: 50%;
+            position: absolute;
+            top:22.5px;
+            left: 10px;
+        }
+        .message{
+            background-color:#f7f9f9;
+            color: #2c2c2c;
+            font-family: 'Rubik',sans-serif;
+            text-align: center;
+            padding:10px 20px 10px 20px; 
+            position: absolute;
+            top:20px;
+            left: 78px;
+            display: none;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="swatches">
+            <div class="swatch s1">
+                <span style="background-color: #468966"></span>
+                <span style="background-color: #FFEFA7"></span>
+                <span style="background-color: #FFB03A"></span>
+                <span style="background-color: #B64A26"></span>
+
+            </div>
+            <div class="swatch s2">
+                <span style="background-color: #FEFFDB"></span>
+                <span style="background-color: #FFC50A"></span>
+                <span style="background-color: #FE8A00"></span>
+                <span style="background-color: #434343"></span>
+            </div>
+            <div class="swatch s3">
+                <span style="background-color: #1A3C58"></span>
+                <span style="background-color: #466174"></span>
+                <span style="background-color: #A6EF8C"></span>
+                <span style="background-color: #F2F2F0"></span>
+            </div>
+            <div class="swatch s4">
+                <span style="background-color: #1695A4"></span>
+                <span style="background-color: #ACF0F1"></span>
+                <span style="background-color: #F2FFE3"></span>
+                <span style="background-color: #EB8000"></span>
+            </div>
+            <div class="cover">
+                <div class="details">
+                    <span class="title">COLOR GUIDE</span>
+                    <span class="ins">Hover Me</span>
+                </div>
+                <div class="pin"></div>
+            </div>
+        </div>
+        <div class="message">Copied to Clipboard!</div>
+    </div>
+</body>
+</html>
